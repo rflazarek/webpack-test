@@ -1,13 +1,171 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #0f4983 0%, #90ade2 100%);
+}
+
+.header_nav {
+  background-color: #0f4983;
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header {
+  grid-area: header;
+}
+
+h1 {
+  color: blanchedalmond;
+}
+
+.header-h1 {
+  color: silver;
+}
+
+.header-h2 {
+  color: darkgray;
+}
+
+.header-h3 {
+  color: blue;
+}
+
+.article__header-h3::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: silver;
+  border-radius: 50%;
+}
+
+.article__header-h3::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: silver;
+  border-radius: 50%;
+}
+
+section {
+  background-color: rgb(255, 255, 255);
+}
+
+.main {
+  margin: 60px auto 0;
+}
+
+.mian_column {
+  grid-area: main_column;
+}
+.photo {
+  display: block;
+  max-width: 100%;
+}
+
+.aside_column {
+  grid-area: aside_column;
+}
+.footer {
+  color: blanchedalmond;
+  grid-area: footer;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.navigation {
+  padding: 16px;
+  display: none;
+  &--open {
+    display: block;
+  }
+  &__link {
+    color: #fff;
+    display: block;
+    margin: 20px;
+    &--homepage {
+      background: #fff;
+      color: black;
+    }
+  }
+}
+
+
+
+.article {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 16px;
+  &__header-h3 {
+    color: blue;
+  }
+  &__header-h3--special {
+    color: cadetblue;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .aside_column {
+    display: none;
+  }
+}
+
+.hamburger {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    max-width: 1000px;
+    margin: 60 0 auto;
+
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "mian_column . aside_column"
+      "footer footer footer";
+
+    column-gap: 16px;
+    row-gap: 16px;
+    grid-template-columns: 1fr 24px 200px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  .navigation {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &__link {
+      color: #fff;
+      display: inline-block;
+      margin-right: 20px;
+    }
+    &__link--homepage {
+      background: #fff;
+      color: black;
+    }
+  }
 }
