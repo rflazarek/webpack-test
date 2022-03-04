@@ -9,7 +9,6 @@
     "build": "webpack --config webpack.prod.js --mode production",
     "publish": "npm run build && gh-pages -d dist",
     "generate-icons": "npx pwa-asset-generator ./src/assets/img/logo.svg public/pwa -i ./src/pages/index.html -m ./public/manifest.json  --path-override pwa --type png -b \"#2D2241\""
-    
   },
   "keywords": [
     "Webpack",
@@ -45,6 +44,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "dependencies": {
+    "moment": "^2.29.1",
     "normalize.css": "^8.0.1"
   }
 }
