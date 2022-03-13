@@ -2,8 +2,6 @@
 
 @import "_variables";
 
-
-
 html {
   box-sizing: border-box;
 }
@@ -17,6 +15,7 @@ html {
 body {
   background-color: #8ec5fc;
   background-image: linear-gradient(62deg, #0f4983 0%, #90ade2 100%);
+  background-color: #205f2a; //testing
 }
 
 .header_nav {
@@ -73,7 +72,7 @@ section {
   margin: 60px auto 0;
 }
 
-.mian_column {
+.main_column {
   grid-area: main_column;
 }
 .photo {
@@ -108,8 +107,6 @@ section {
   }
 }
 
-
-
 .article {
   border: 1px solid #ccc;
   padding: 16px;
@@ -142,7 +139,7 @@ section {
     display: grid;
     grid-template-areas:
       "header header header"
-      "mian_column . aside_column"
+      "main_column . aside_column"
       "footer footer footer";
 
     column-gap: 16px;
@@ -169,3 +166,14 @@ section {
     }
   }
 }
+
+
+  :root {
+    --background-color: #fefefe;
+    --text-color: #333333;
+  }
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
