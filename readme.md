@@ -1,8 +1,8 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# It is my first Webpack Starter Kit for my site HOMEPAGE
 
-Simple toolkit for your static websites development.
+Webpack is imple toolkit for your static websites development.
 
 ## How to use it?
 
@@ -15,4 +15,20 @@ Click on `Use this template` button to generate a new repository based on this s
 `npm run build` - runs build process for production
 
 `npm run publish` - runs build process and publish the page using `gh-pages` branch
+
+## I am also learning Markdown'a
+
+'#' - first degree header
+'##' - second degree header
+'###' - third degree header
+
+quote:
+>to be or not to be
+
+italics:
+*text*
+bold:
+**text**
+italics and bold:
+***text***
 
