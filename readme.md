@@ -2,7 +2,7 @@
 
 # It is my first Webpack Starter Kit for my site HOMEPAGE
 
-Webpack is imple toolkit for your static websites development.
+Webpack is simple toolkit for your static websites development.
 
 ## How to use it?
 
