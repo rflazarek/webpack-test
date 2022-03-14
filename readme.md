@@ -1,4 +1,4 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](./src/assets/img/person-icon.png)
 
 # It is my first Webpack Starter Kit for my site HOMEPAGE
 
