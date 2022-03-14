@@ -19,7 +19,9 @@ Click on `Use this template` button to generate a new repository based on this s
 ## I am also learning Markdown'a
 
 '#' - first degree header
+
 '##' - second degree header
+
 '###' - third degree header
 
 quote:
@@ -27,8 +29,10 @@ quote:
 
 italics:
 *text*
+
 bold:
 **text**
+
 italics and bold:
 ***text***
 
